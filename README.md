@@ -1,6 +1,10 @@
 # Remote Rental Listing Assistant — Landing Page
 
-A simple, shareable landing page based on the hiring flier. Use the deployed URL as the link caption whenever you post the flier online.
+A simple, shareable landing page based on the hiring flier.
+
+**Live site:** https://privatepropertygroups.com
+
+Use that full link when posting on Facebook or other social platforms.
 
 ## Quick preview
 
@@ -30,6 +34,18 @@ Push to `main` — `netlify.toml` publishes from the repo root automatically.
 ```bash
 npx vercel
 ```
+
+## Share on Facebook
+
+Facebook often **does not make bare domains clickable** in comments (for example `property-management.group` without `https://`).
+
+When posting in comments:
+
+1. Copy the link from the **Share on Facebook** box in the page footer (includes `https://`)
+2. Paste it **on its own line** in the comment
+3. If it still does not link, add a space before the URL and delete it to retrigger Facebook
+
+The site injects full Open Graph URLs on Netlify deploy so link previews work when Facebook does detect the URL.
 
 ## Custom domain (optional)
 

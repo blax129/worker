@@ -1,5 +1,9 @@
 [build]
+  command = "node build.mjs"
   publish = "."
+
+[context.production.environment]
+  SITE_URL = "https://privatepropertygroups.com"
 
 [[headers]]
   for = "/*"

@@ -741,6 +741,84 @@ a {
   text-align: center;
 }
 
+.share-link {
+  margin-bottom: 1.5rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.share-link__label {
+  font-size: 0.8125rem;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.82);
+  margin-bottom: 0.65rem;
+}
+
+.share-link__row {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 0.55rem;
+  max-width: 100%;
+}
+
+.share-link__url {
+  display: block;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  font-size: 0.72rem;
+  line-height: 1.45;
+  word-break: break-all;
+  color: var(--gold);
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(201, 162, 39, 0.25);
+  border-radius: 6px;
+  padding: 0.65rem 0.75rem;
+}
+
+.share-link__copy {
+  align-self: center;
+  min-width: 120px;
+  min-height: 44px;
+  padding: 0.55rem 1rem;
+  border: 1px solid rgba(201, 162, 39, 0.45);
+  border-radius: 6px;
+  background: rgba(201, 162, 39, 0.12);
+  color: var(--gold);
+  font-family: var(--sans);
+  font-size: 0.8125rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background var(--transition), border-color var(--transition);
+  -webkit-tap-highlight-color: transparent;
+}
+
+.share-link__copy:hover {
+  background: rgba(201, 162, 39, 0.2);
+  border-color: rgba(201, 162, 39, 0.65);
+}
+
+.share-link__copy:disabled {
+  opacity: 0.55;
+  cursor: not-allowed;
+}
+
+.share-link--preview .share-link__url {
+  color: rgba(255, 255, 255, 0.45);
+  border-style: dashed;
+}
+
+.share-link__tip {
+  margin-top: 0.75rem;
+  font-size: 0.72rem;
+  line-height: 1.5;
+  color: rgba(255, 255, 255, 0.45);
+}
+
+.share-link__tip strong {
+  color: rgba(255, 255, 255, 0.65);
+  font-weight: 600;
+}
+
 .site-footer__links {
   display: flex;
   flex-direction: column;
@@ -809,6 +887,22 @@ a {
     flex-direction: row;
     justify-content: center;
     gap: 1.5rem;
+  }
+
+  .share-link__row {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .share-link__url {
+    flex: 1;
+    text-align: left;
+    max-width: 420px;
+  }
+
+  .share-link__copy {
+    flex-shrink: 0;
   }
 
   .site-footer__links a + a {
