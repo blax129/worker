@@ -35,18 +35,6 @@ Push to `main` — `netlify.toml` publishes from the repo root automatically.
 npx vercel
 ```
 
-## Share on Facebook
-
-Facebook often **does not make bare domains clickable** in comments (for example `property-management.group` without `https://`).
-
-When posting in comments:
-
-1. Copy the link from the **Share on Facebook** box in the page footer (includes `https://`)
-2. Paste it **on its own line** in the comment
-3. If it still does not link, add a space before the URL and delete it to retrigger Facebook
-
-The site injects full Open Graph URLs on Netlify deploy so link previews work when Facebook does detect the URL.
-
 ## Custom domain (optional)
 
 Point a subdomain like `jobs.property-management.group` to your hosting provider for a branded link.
