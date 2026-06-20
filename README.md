@@ -41,6 +41,6 @@ Point a subdomain like `jobs.property-management.group` to your hosting provider
 
 ## Contact info (matches flier)
 
-- **Phone:** (513) 628-6294
+- **Phone:** +1 (315) 272-3641
 - **Email:** support@property-management.group
 - **Organization:** [property-management.group](https://property-management.group)
